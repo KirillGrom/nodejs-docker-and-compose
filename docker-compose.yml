@@ -16,8 +16,10 @@ services:
   backend:
     build:
       context: ./backend
-    container_name: kirillgrom94/kupipodariday-backendё:1.0.0
+    container_name: kupipodariday-backend
+
     restart: always
+    image: kirillgrom94/kupipodariday-backend:1.0.0
     env_file:
       - ./backend/.env
     ports:
@@ -28,8 +30,9 @@ services:
   frontend:
     build:
       context: ./frontend
-    container_name: kirillgrom94/kupipodariday-frontend:1.0.0
+    container_name: kupipodariday-frontend
     restart: always
+    image: kirillgrom94/kupipodariday-frontend:1.0.0
     env_file:
       - ./frontend/.env
     ports:
