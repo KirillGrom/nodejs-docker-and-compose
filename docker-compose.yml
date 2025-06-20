@@ -16,7 +16,7 @@ services:
   backend:
     build:
       context: ./backend
-    container_name: kupipodariday-backend
+    container_name: kirillgrom94/kupipodariday-backendё:1.0.0
     restart: always
     env_file:
       - ./backend/.env
@@ -28,7 +28,7 @@ services:
   frontend:
     build:
       context: ./frontend
-    container_name: kupipodariday-frontend
+    container_name: kirillgrom94/kupipodariday-frontend:1.0.0
     restart: always
     env_file:
       - ./frontend/.env
