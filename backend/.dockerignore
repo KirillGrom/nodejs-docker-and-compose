@@ -1,0 +1,14 @@
+.git
+.gitignore
+Dockerfile*
+*.md
+*.tar
+*.env
+*.log
+node_modules
+frontend/node_modules
+backend/node_modules
+frontend/.cache
+backend/.cache
+frontend/.idea
+backend/.idea
